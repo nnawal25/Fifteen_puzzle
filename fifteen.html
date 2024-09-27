@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <title>Fifteen Puzzle</title>
+    <link rel="stylesheet" href="fifteen_project2.css" />
+    <meta charset="utf-8"/>
+    <script src="fifteen.js"></script>
+</head>
+<body>
+   
+        <h1>Fifteen Puzzle</h1>
+        <p>
+            The goal of the fifteen puzzle is to un-jumble its fifteen squares by repeatedly making moves that slide
+            squares into the empty space. How quickly can you solve it?
+        </p>
+
+        <span id="win"></span>
+
+        <audio id="myAudio">
+            <source src="https://codd.cs.gsu.edu/~alomini1/WP/PW/PW2/audio/bg.mp3" type="audio/mp3">
+
+        </audio>
+
+        <audio id="winSound">
+            <source src="https://codd.cs.gsu.edu/~alomini1/WP/PW/PW2/audio/win.mp3" type="audio/mp3">
+        </audio>
+        
+
+        <select id="characters" name="characters" title="Backgrounds" onchange="select_background()">
+            <option value="url('https://codd.cs.gsu.edu/~alomini1/WP/PW/PW2/images/smiley.gif')" id="super-mario">SophiaBG</option> <!-- change the name -->
+            <option value="url('https://codd.cs.gsu.edu/~alomini1/WP/PW/PW2/images/backgroundAgyei.jpg')"  id="luigi">AgyeiBG</option>
+            <option value="url('https://codd.cs.gsu.edu/~alomini1/WP/PW/PW2/images/Mickey-Mouse.png')" id="bowser">NafisaBG</option>
+            <option value="url('https://codd.cs.gsu.edu/~alomini1/WP/PW/PW2/images/colorSpiral.png')"  id="toad">OtherBG</option>
+        </select>
+
+
+
+    <div id="centerpuzzle">
+        <div id="puzzlearea">
+            <!--row 1-->
+            <div id="one"      class="tile">1</div>
+            <div id="two"      class="tile">2</div>
+            <div id="three"    class="tile">3</div>
+            <div id="four"     class="tile">4</div>
+
+            <!--row 2-->
+            <div id="five"     class="tile">5</div>
+            <div id="six"      class="tile">6</div>
+            <div id="seven"    class="tile">7</div>
+            <div id="eight"    class="tile">8</div>
+
+            <!--row 3-->
+            <div id="nine"     class="tile">9</div>
+            <div id="ten"      class="tile">10</div>
+            <div id="eleven"   class="tile">11</div>
+            <div id="twelve"   class="tile">12</div>
+
+            <!--row 4-->
+            <div id="thirteen" class="tile">13</div>
+            <div id="fourteen" class="tile">14</div>
+            <div id="fifteen"  class="tile">15</div>
+        </div>
+    
+
+        <button id="shuffler">Shuffle</button>
+    </div>
+        <p>
+            American puzzle author and mathematician Sam Loyd is often falsely credited with creating the puzzle; indeed,
+            Loyd claimed from 1891 until his death in 1911 that he invented it. The puzzle was actually created around 1874
+            by Noyes Palmer Chapman, a postmaster in Canastota, New york.
+        </p>
+
+        <p>
+            <img src="https://codd.cs.gsu.edu/~alomini1/WP/PW/PW2/images/jsl.PNG" alt="JSLint"/>
+            <img src="https://codd.cs.gsu.edu/~alomini1/WP/PW/PW2/images/w3c-css.png" alt="W3C CSS"/>
+            <img src="https://codd.cs.gsu.edu/~alomini1/WP/PW/PW2/images/valid-xhtml11.png" alt="W3C XHTML"/>
+        </p>
+
+    <script type="text/javascript" src="fifteen.js"></script> <!--link to Agyei JS file-->
+</body>
+</html>

@@ -1,0 +1,139 @@
+body {
+    height: 100%;
+    font-family: "Times New Roman", serif;
+}
+
+#wrapper {
+    margin: 5% auto;
+    width: 600px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: "Arial", sans-serif;
+}
+
+
+
+.tile {
+    width:96px;
+    height:96px;
+    float: left;
+    text-align: center;
+    border: 2px black solid;
+    vertical-align: middle;
+    font-size: 32px;
+    font-family: sans-serif;
+    line-height: 100px;
+    text-shadow: 1px 1px 2px black, 
+    0 0 25px white, 
+    0 0 5px white;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 26pt;
+    line-height: 1.1em;
+	padding-bottom: 10px;
+}
+
+button, select {
+    display: block;
+    margin: 10px auto;
+}
+
+img {
+    height: 30px;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    border:0;
+}
+
+#puzzlearea {
+	font-size: 32px;
+	height: 400px;
+	padding: 0px;
+	position: relative;
+}
+
+.puzzlepiece {
+	background-image: url(background.jpg);
+	border: 2px solid black;
+	height: 96px;
+	line-height: 96px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 96px;
+}
+
+#centerpuzzle{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+#win{
+    text-align: center;
+    display: table;
+    margin: auto;
+}
+
+/*put jpg */
+.SophiaBG { background: url("smiley.gif");}
+.AgyeiBG  { background: url("luigi.jpg");}
+.NafisaBG { background: url("bowser.jpg");}
+.OtherBG  { background: url("toad.jpg");}
+
+.movablepiece {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.movablepiece:hover {
+    border-color: red !important;
+    text-decoration: underline !important;
+    color: #006600;
+    cursor: pointer;
+}
+
+
+.animate-up {
+    -webkit-transform: translate(0, -100px);
+    -moz-transform: translate(0, -100px);
+    -ms-transform: translate(0, -100px);
+    -o-transform: translate(0, -100px);
+    transform: translate(0, -100px);
+}
+
+.animate-down {
+    -webkit-transform: translate(0, 100px);
+    -moz-transform: translate(0, 100px);
+    -ms-transform: translate(0, 100px);
+    -o-transform: translate(0, 100px);
+    transform: translate(0, 100px);
+}
+
+.animate-left {
+    -webkit-transform: translate(-100px, 0);
+    -moz-transform: translate(-100px, 0);
+    -ms-transform: translate(-100px, 0);
+    -o-transform: translate(-100px, 0);
+    transform: translate(-100px, 0);
+}
+
+.animate-right {
+    -webkit-transform: translate(100px, 0);
+    -moz-transform: translate(100px, 0);
+    -ms-transform: translate(100px, 0);
+    -o-transform: translate(100px, 0);
+    transform: translate(100px, 0);
+}
